@@ -1,0 +1,13 @@
+build
+dist
+coverage
+    
+*.min.*
+
+.vscode
+.gitignore
+.prettierignore
+.eslintignore
+.prettierrc
+package.json
+package-lock.json

@@ -1,0 +1,25 @@
+{
+  "name": "prettier",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --write './**/*.{js,ts,vue,json}' --ignore-path .prettierignore",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,mjs,jsx,ts,tsx,json,css,scss,vue}": [
+      "prettier --write"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "prettier": "^3.5.3",
+    "husky": "^9.1.7"
+  },
+  "devDependencies": {
+  }
+}
