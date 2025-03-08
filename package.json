@@ -1,9 +1,9 @@
 {
-  "name": "prettier-package",
-  "version": "1.0.0",
+  "name": "alih-prettier",
+  "version": "1.0.1",
   "main": "index.js",
   "bin": {
-    "run-prettier": "./bin/run-prettier.js"
+    "alih-prettier": "./bin/run-prettier.js"
   },
   "scripts": {
     "prettier": "prettier --write './**/*.{js,ts,vue,json}' --ignore-path .prettierignore",
@@ -17,9 +17,9 @@
     ]
   },
   "keywords": ["prettier", "formatter", "code-style"],
-  "author": "",
+  "author": "alih70442",
   "license": "ISC",
-  "description": "A package to run prettier formatting in any project",
+  "description": "A package to run prettier formatting in project",
   "dependencies": {
     "prettier": "^3.5.3",
     "husky": "^9.1.7"
