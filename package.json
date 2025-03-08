@@ -1,21 +1,25 @@
 {
-  "name": "prettier",
+  "name": "prettier-package",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "run-prettier": "./bin/run-prettier.js"
+  },
   "scripts": {
     "prettier": "prettier --write './**/*.{js,ts,vue,json}' --ignore-path .prettierignore",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+    "prepare": "husky",
+    "format": "prettier --write './**/*.{js,ts,vue,json}' --ignore-path .prettierignore"
   },
   "lint-staged": {
     "*.{js,mjs,jsx,ts,tsx,json,css,scss,vue}": [
       "prettier --write"
     ]
   },
-  "keywords": [],
+  "keywords": ["prettier", "formatter", "code-style"],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "A package to run prettier formatting in any project",
   "dependencies": {
     "prettier": "^3.5.3",
     "husky": "^9.1.7"
